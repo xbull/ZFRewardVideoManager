@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12E4C64ACD33A8D512B2BA70 /* libPods-ZFRewardVideoDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C81431B8DAF396564A36D1 /* libPods-ZFRewardVideoDemo.a */; };
+		A71DBCC81DED848B0025C5A0 /* ZFRewardVideoMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DBCC71DED848B0025C5A0 /* ZFRewardVideoMediator.m */; };
+		A71DBCCC1DED86CD0025C5A0 /* ZFRewardVideoMediator+Vungle.m in Sources */ = {isa = PBXBuildFile; fileRef = A71DBCCB1DED86CD0025C5A0 /* ZFRewardVideoMediator+Vungle.m */; };
+		A76CF6801DEA7F5D001B4AA5 /* ZFRewardVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A76CF6761DEA7F5D001B4AA5 /* ZFRewardVideoManager.m */; };
+		A76CF6811DEA7F5D001B4AA5 /* ZFRewardVideoParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = A76CF6781DEA7F5D001B4AA5 /* ZFRewardVideoParameters.m */; };
+		A76CF6851DEA800A001B4AA5 /* NSOrderedSet+FirstObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A76CF6841DEA800A001B4AA5 /* NSOrderedSet+FirstObject.m */; };
+		A76CF6881DEA804A001B4AA5 /* NSOrderedSet+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = A76CF6871DEA804A001B4AA5 /* NSOrderedSet+Safe.m */; };
+		A76CF68B1DEA80FB001B4AA5 /* ZFCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = A76CF68A1DEA80FB001B4AA5 /* ZFCommon.m */; };
+		A77310E71DEE7A590079C359 /* Target_Vungle.m in Sources */ = {isa = PBXBuildFile; fileRef = A77310E41DEE7A590079C359 /* Target_Vungle.m */; };
+		A77310E81DEE7A590079C359 /* ZFVungleRewardVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A77310E61DEE7A590079C359 /* ZFVungleRewardVideoManager.m */; };
+		A77310EE1DEE84980079C359 /* ZFAppnextRewardVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A77310ED1DEE84980079C359 /* ZFAppnextRewardVideoManager.m */; };
+		A77311051DEE86AD0079C359 /* libAppnextLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A77311031DEE86AD0079C359 /* libAppnextLib.a */; };
+		A77311061DEE86AD0079C359 /* libAppnextSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A77311041DEE86AD0079C359 /* libAppnextSDKCore.a */; };
+		A77311091DEEB6DE0079C359 /* Target_Appnext.m in Sources */ = {isa = PBXBuildFile; fileRef = A77311081DEEB6DE0079C359 /* Target_Appnext.m */; };
+		A773110C1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.m in Sources */ = {isa = PBXBuildFile; fileRef = A773110B1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.m */; };
+		A77311111DEEC42E0079C359 /* AdColonyRewardVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A77311101DEEC42E0079C359 /* AdColonyRewardVideoManager.m */; };
+		A77311141DEEC6260079C359 /* Target_Adcolony.m in Sources */ = {isa = PBXBuildFile; fileRef = A77311131DEEC6260079C359 /* Target_Adcolony.m */; };
+		A77311171DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.m in Sources */ = {isa = PBXBuildFile; fileRef = A77311161DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.m */; };
+		A78439491DE7EA150071234B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A78439481DE7EA150071234B /* main.m */; };
+		A784394C1DE7EA150071234B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A784394B1DE7EA150071234B /* AppDelegate.m */; };
+		A784394F1DE7EA150071234B /* ZFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A784394E1DE7EA150071234B /* ZFViewController.m */; };
+		A78439541DE7EA150071234B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78439531DE7EA150071234B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03C81431B8DAF396564A36D1 /* libPods-ZFRewardVideoDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZFRewardVideoDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71DBCC61DED848B0025C5A0 /* ZFRewardVideoMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRewardVideoMediator.h; sourceTree = "<group>"; };
+		A71DBCC71DED848B0025C5A0 /* ZFRewardVideoMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRewardVideoMediator.m; sourceTree = "<group>"; };
+		A71DBCCA1DED86CD0025C5A0 /* ZFRewardVideoMediator+Vungle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZFRewardVideoMediator+Vungle.h"; sourceTree = "<group>"; };
+		A71DBCCB1DED86CD0025C5A0 /* ZFRewardVideoMediator+Vungle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZFRewardVideoMediator+Vungle.m"; sourceTree = "<group>"; };
+		A76CF66E1DEA7F5D001B4AA5 /* ZFRewardVideoDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRewardVideoDelegate.h; sourceTree = "<group>"; };
+		A76CF6751DEA7F5D001B4AA5 /* ZFRewardVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRewardVideoManager.h; sourceTree = "<group>"; };
+		A76CF6761DEA7F5D001B4AA5 /* ZFRewardVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRewardVideoManager.m; sourceTree = "<group>"; };
+		A76CF6771DEA7F5D001B4AA5 /* ZFRewardVideoParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRewardVideoParameters.h; sourceTree = "<group>"; };
+		A76CF6781DEA7F5D001B4AA5 /* ZFRewardVideoParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRewardVideoParameters.m; sourceTree = "<group>"; };
+		A76CF6831DEA800A001B4AA5 /* NSOrderedSet+FirstObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSet+FirstObject.h"; sourceTree = "<group>"; };
+		A76CF6841DEA800A001B4AA5 /* NSOrderedSet+FirstObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOrderedSet+FirstObject.m"; sourceTree = "<group>"; };
+		A76CF6861DEA804A001B4AA5 /* NSOrderedSet+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSet+Safe.h"; sourceTree = "<group>"; };
+		A76CF6871DEA804A001B4AA5 /* NSOrderedSet+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOrderedSet+Safe.m"; sourceTree = "<group>"; };
+		A76CF6891DEA80FB001B4AA5 /* ZFCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCommon.h; sourceTree = "<group>"; };
+		A76CF68A1DEA80FB001B4AA5 /* ZFCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCommon.m; sourceTree = "<group>"; };
+		A77310E31DEE7A590079C359 /* Target_Vungle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Vungle.h; sourceTree = "<group>"; };
+		A77310E41DEE7A590079C359 /* Target_Vungle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Vungle.m; sourceTree = "<group>"; };
+		A77310E51DEE7A590079C359 /* ZFVungleRewardVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFVungleRewardVideoManager.h; sourceTree = "<group>"; };
+		A77310E61DEE7A590079C359 /* ZFVungleRewardVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFVungleRewardVideoManager.m; sourceTree = "<group>"; };
+		A77310EC1DEE84980079C359 /* ZFAppnextRewardVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFAppnextRewardVideoManager.h; sourceTree = "<group>"; };
+		A77310ED1DEE84980079C359 /* ZFAppnextRewardVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFAppnextRewardVideoManager.m; sourceTree = "<group>"; };
+		A77310F21DEE86AD0079C359 /* AppnextFullScreenVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextFullScreenVideoAd.h; sourceTree = "<group>"; };
+		A77310F31DEE86AD0079C359 /* AppnextFullScreenVideoAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextFullScreenVideoAdConfiguration.h; sourceTree = "<group>"; };
+		A77310F41DEE86AD0079C359 /* AppnextInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextInterstitialAd.h; sourceTree = "<group>"; };
+		A77310F51DEE86AD0079C359 /* AppnextInterstitialAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextInterstitialAdConfiguration.h; sourceTree = "<group>"; };
+		A77310F61DEE86AD0079C359 /* AppnextLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextLib.h; sourceTree = "<group>"; };
+		A77310F71DEE86AD0079C359 /* AppnextRewardedServerSidePostbackParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextRewardedServerSidePostbackParams.h; sourceTree = "<group>"; };
+		A77310F81DEE86AD0079C359 /* AppnextRewardedVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextRewardedVideoAd.h; sourceTree = "<group>"; };
+		A77310F91DEE86AD0079C359 /* AppnextRewardedVideoAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextRewardedVideoAdConfiguration.h; sourceTree = "<group>"; };
+		A77310FA1DEE86AD0079C359 /* AppnextSDKApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextSDKApi.h; sourceTree = "<group>"; };
+		A77310FB1DEE86AD0079C359 /* AppnextVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextVideoAd.h; sourceTree = "<group>"; };
+		A77310FC1DEE86AD0079C359 /* AppnextVideoAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextVideoAdConfiguration.h; sourceTree = "<group>"; };
+		A77310FE1DEE86AD0079C359 /* AppnextAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAd.h; sourceTree = "<group>"; };
+		A77310FF1DEE86AD0079C359 /* AppnextAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAdConfiguration.h; sourceTree = "<group>"; };
+		A77311001DEE86AD0079C359 /* AppnextAdData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextAdData.h; sourceTree = "<group>"; };
+		A77311011DEE86AD0079C359 /* AppnextSDKCoreApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextSDKCoreApi.h; sourceTree = "<group>"; };
+		A77311021DEE86AD0079C359 /* AppnextSDKCorePublicDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppnextSDKCorePublicDefs.h; sourceTree = "<group>"; };
+		A77311031DEE86AD0079C359 /* libAppnextLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextLib.a; sourceTree = "<group>"; };
+		A77311041DEE86AD0079C359 /* libAppnextSDKCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppnextSDKCore.a; sourceTree = "<group>"; };
+		A77311071DEEB6DE0079C359 /* Target_Appnext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Appnext.h; sourceTree = "<group>"; };
+		A77311081DEEB6DE0079C359 /* Target_Appnext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Appnext.m; sourceTree = "<group>"; };
+		A773110A1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZFRewardVideoMediator+Appnext.h"; sourceTree = "<group>"; };
+		A773110B1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZFRewardVideoMediator+Appnext.m"; sourceTree = "<group>"; };
+		A773110F1DEEC42E0079C359 /* AdColonyRewardVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdColonyRewardVideoManager.h; sourceTree = "<group>"; };
+		A77311101DEEC42E0079C359 /* AdColonyRewardVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdColonyRewardVideoManager.m; sourceTree = "<group>"; };
+		A77311121DEEC6260079C359 /* Target_Adcolony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Adcolony.h; sourceTree = "<group>"; };
+		A77311131DEEC6260079C359 /* Target_Adcolony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Adcolony.m; sourceTree = "<group>"; };
+		A77311151DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZFRewardVideoMediator+Adcolony.h"; sourceTree = "<group>"; };
+		A77311161DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZFRewardVideoMediator+Adcolony.m"; sourceTree = "<group>"; };
+		A78439441DE7EA150071234B /* ZFRewardVideoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFRewardVideoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A78439481DE7EA150071234B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A784394A1DE7EA150071234B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A784394B1DE7EA150071234B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A784394D1DE7EA150071234B /* ZFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFViewController.h; sourceTree = "<group>"; };
+		A784394E1DE7EA150071234B /* ZFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFViewController.m; sourceTree = "<group>"; };
+		A78439531DE7EA150071234B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A78439581DE7EA150071234B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B30F5A347EF705D976E30A14 /* Pods-ZFRewardVideoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFRewardVideoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFRewardVideoDemo/Pods-ZFRewardVideoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EBEB53000CC4FC7F84BF8440 /* Pods-ZFRewardVideoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFRewardVideoDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFRewardVideoDemo/Pods-ZFRewardVideoDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A78439411DE7EA150071234B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77311051DEE86AD0079C359 /* libAppnextLib.a in Frameworks */,
+				A77311061DEE86AD0079C359 /* libAppnextSDKCore.a in Frameworks */,
+				12E4C64ACD33A8D512B2BA70 /* libPods-ZFRewardVideoDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40A2AD855FD5F299824C54C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03C81431B8DAF396564A36D1 /* libPods-ZFRewardVideoDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4336125C6A464991AFFA91ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B30F5A347EF705D976E30A14 /* Pods-ZFRewardVideoDemo.debug.xcconfig */,
+				EBEB53000CC4FC7F84BF8440 /* Pods-ZFRewardVideoDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A71DBCC21DED836B0025C5A0 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				A71DBCC61DED848B0025C5A0 /* ZFRewardVideoMediator.h */,
+				A71DBCC71DED848B0025C5A0 /* ZFRewardVideoMediator.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		A71DBCC91DED86AA0025C5A0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A71DBCCA1DED86CD0025C5A0 /* ZFRewardVideoMediator+Vungle.h */,
+				A71DBCCB1DED86CD0025C5A0 /* ZFRewardVideoMediator+Vungle.m */,
+				A773110A1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.h */,
+				A773110B1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.m */,
+				A77311151DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.h */,
+				A77311161DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A71DBCCD1DED879F0025C5A0 /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				A773110D1DEEC42E0079C359 /* Adcolony */,
+				A77310EA1DEE84980079C359 /* Appnext */,
+				A77310E11DEE7A590079C359 /* Vungle */,
+			);
+			path = Platforms;
+			sourceTree = "<group>";
+		};
+		A76CF65E1DEA7F5D001B4AA5 /* ZFRewardVideoManager */ = {
+			isa = PBXGroup;
+			children = (
+				A71DBCC91DED86AA0025C5A0 /* Categories */,
+				A71DBCC21DED836B0025C5A0 /* Mediator */,
+				A76CF6821DEA800A001B4AA5 /* Utils */,
+				A71DBCCD1DED879F0025C5A0 /* Platforms */,
+				A76CF66E1DEA7F5D001B4AA5 /* ZFRewardVideoDelegate.h */,
+				A76CF6751DEA7F5D001B4AA5 /* ZFRewardVideoManager.h */,
+				A76CF6761DEA7F5D001B4AA5 /* ZFRewardVideoManager.m */,
+				A76CF6771DEA7F5D001B4AA5 /* ZFRewardVideoParameters.h */,
+				A76CF6781DEA7F5D001B4AA5 /* ZFRewardVideoParameters.m */,
+			);
+			name = ZFRewardVideoManager;
+			path = ../ZFRewardVideoManager;
+			sourceTree = "<group>";
+		};
+		A76CF6821DEA800A001B4AA5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A76CF6861DEA804A001B4AA5 /* NSOrderedSet+Safe.h */,
+				A76CF6871DEA804A001B4AA5 /* NSOrderedSet+Safe.m */,
+				A76CF6831DEA800A001B4AA5 /* NSOrderedSet+FirstObject.h */,
+				A76CF6841DEA800A001B4AA5 /* NSOrderedSet+FirstObject.m */,
+				A76CF6891DEA80FB001B4AA5 /* ZFCommon.h */,
+				A76CF68A1DEA80FB001B4AA5 /* ZFCommon.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A77310E11DEE7A590079C359 /* Vungle */ = {
+			isa = PBXGroup;
+			children = (
+				A77310E21DEE7A590079C359 /* Action */,
+				A77310E51DEE7A590079C359 /* ZFVungleRewardVideoManager.h */,
+				A77310E61DEE7A590079C359 /* ZFVungleRewardVideoManager.m */,
+			);
+			path = Vungle;
+			sourceTree = "<group>";
+		};
+		A77310E21DEE7A590079C359 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				A77310E31DEE7A590079C359 /* Target_Vungle.h */,
+				A77310E41DEE7A590079C359 /* Target_Vungle.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		A77310EA1DEE84980079C359 /* Appnext */ = {
+			isa = PBXGroup;
+			children = (
+				A77310EF1DEE86AD0079C359 /* AppnextIOSSDK */,
+				A77310EB1DEE84980079C359 /* Action */,
+				A77310EC1DEE84980079C359 /* ZFAppnextRewardVideoManager.h */,
+				A77310ED1DEE84980079C359 /* ZFAppnextRewardVideoManager.m */,
+			);
+			path = Appnext;
+			sourceTree = "<group>";
+		};
+		A77310EB1DEE84980079C359 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				A77311071DEEB6DE0079C359 /* Target_Appnext.h */,
+				A77311081DEEB6DE0079C359 /* Target_Appnext.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		A77310EF1DEE86AD0079C359 /* AppnextIOSSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A77310F01DEE86AD0079C359 /* include */,
+				A77311031DEE86AD0079C359 /* libAppnextLib.a */,
+				A77311041DEE86AD0079C359 /* libAppnextSDKCore.a */,
+			);
+			path = AppnextIOSSDK;
+			sourceTree = "<group>";
+		};
+		A77310F01DEE86AD0079C359 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A77310F11DEE86AD0079C359 /* AppnextLib */,
+				A77310FD1DEE86AD0079C359 /* AppnextSDKCore */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A77310F11DEE86AD0079C359 /* AppnextLib */ = {
+			isa = PBXGroup;
+			children = (
+				A77310F21DEE86AD0079C359 /* AppnextFullScreenVideoAd.h */,
+				A77310F31DEE86AD0079C359 /* AppnextFullScreenVideoAdConfiguration.h */,
+				A77310F41DEE86AD0079C359 /* AppnextInterstitialAd.h */,
+				A77310F51DEE86AD0079C359 /* AppnextInterstitialAdConfiguration.h */,
+				A77310F61DEE86AD0079C359 /* AppnextLib.h */,
+				A77310F71DEE86AD0079C359 /* AppnextRewardedServerSidePostbackParams.h */,
+				A77310F81DEE86AD0079C359 /* AppnextRewardedVideoAd.h */,
+				A77310F91DEE86AD0079C359 /* AppnextRewardedVideoAdConfiguration.h */,
+				A77310FA1DEE86AD0079C359 /* AppnextSDKApi.h */,
+				A77310FB1DEE86AD0079C359 /* AppnextVideoAd.h */,
+				A77310FC1DEE86AD0079C359 /* AppnextVideoAdConfiguration.h */,
+			);
+			path = AppnextLib;
+			sourceTree = "<group>";
+		};
+		A77310FD1DEE86AD0079C359 /* AppnextSDKCore */ = {
+			isa = PBXGroup;
+			children = (
+				A77310FE1DEE86AD0079C359 /* AppnextAd.h */,
+				A77310FF1DEE86AD0079C359 /* AppnextAdConfiguration.h */,
+				A77311001DEE86AD0079C359 /* AppnextAdData.h */,
+				A77311011DEE86AD0079C359 /* AppnextSDKCoreApi.h */,
+				A77311021DEE86AD0079C359 /* AppnextSDKCorePublicDefs.h */,
+			);
+			path = AppnextSDKCore;
+			sourceTree = "<group>";
+		};
+		A773110D1DEEC42E0079C359 /* Adcolony */ = {
+			isa = PBXGroup;
+			children = (
+				A773110E1DEEC42E0079C359 /* Action */,
+				A773110F1DEEC42E0079C359 /* AdColonyRewardVideoManager.h */,
+				A77311101DEEC42E0079C359 /* AdColonyRewardVideoManager.m */,
+			);
+			path = Adcolony;
+			sourceTree = "<group>";
+		};
+		A773110E1DEEC42E0079C359 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				A77311121DEEC6260079C359 /* Target_Adcolony.h */,
+				A77311131DEEC6260079C359 /* Target_Adcolony.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		A784393B1DE7EA150071234B = {
+			isa = PBXGroup;
+			children = (
+				A76CF65E1DEA7F5D001B4AA5 /* ZFRewardVideoManager */,
+				A78439461DE7EA150071234B /* ZFRewardVideoDemo */,
+				A78439451DE7EA150071234B /* Products */,
+				4336125C6A464991AFFA91ED /* Pods */,
+				40A2AD855FD5F299824C54C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A78439451DE7EA150071234B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A78439441DE7EA150071234B /* ZFRewardVideoDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A78439461DE7EA150071234B /* ZFRewardVideoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A784394A1DE7EA150071234B /* AppDelegate.h */,
+				A784394B1DE7EA150071234B /* AppDelegate.m */,
+				A784394D1DE7EA150071234B /* ZFViewController.h */,
+				A784394E1DE7EA150071234B /* ZFViewController.m */,
+				A78439531DE7EA150071234B /* Assets.xcassets */,
+				A78439581DE7EA150071234B /* Info.plist */,
+				A78439471DE7EA150071234B /* Supporting Files */,
+			);
+			path = ZFRewardVideoDemo;
+			sourceTree = "<group>";
+		};
+		A78439471DE7EA150071234B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A78439481DE7EA150071234B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A78439431DE7EA150071234B /* ZFRewardVideoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A784395B1DE7EA150071234B /* Build configuration list for PBXNativeTarget "ZFRewardVideoDemo" */;
+			buildPhases = (
+				AFBE56B55BDB6A75C4F9C35B /* [CP] Check Pods Manifest.lock */,
+				A78439401DE7EA150071234B /* Sources */,
+				A78439411DE7EA150071234B /* Frameworks */,
+				A78439421DE7EA150071234B /* Resources */,
+				03DE76490F140A9779CFCEE0 /* [CP] Embed Pods Frameworks */,
+				D4675D5CAED741CA6D4B6A40 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZFRewardVideoDemo;
+			productName = ZFRewardVideoDemo;
+			productReference = A78439441DE7EA150071234B /* ZFRewardVideoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A784393C1DE7EA150071234B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Ruozi;
+				TargetAttributes = {
+					A78439431DE7EA150071234B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = A784393F1DE7EA150071234B /* Build configuration list for PBXProject "ZFRewardVideoDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A784393B1DE7EA150071234B;
+			productRefGroup = A78439451DE7EA150071234B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A78439431DE7EA150071234B /* ZFRewardVideoDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A78439421DE7EA150071234B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78439541DE7EA150071234B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03DE76490F140A9779CFCEE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZFRewardVideoDemo/Pods-ZFRewardVideoDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFBE56B55BDB6A75C4F9C35B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4675D5CAED741CA6D4B6A40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZFRewardVideoDemo/Pods-ZFRewardVideoDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A78439401DE7EA150071234B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A71DBCCC1DED86CD0025C5A0 /* ZFRewardVideoMediator+Vungle.m in Sources */,
+				A76CF6811DEA7F5D001B4AA5 /* ZFRewardVideoParameters.m in Sources */,
+				A71DBCC81DED848B0025C5A0 /* ZFRewardVideoMediator.m in Sources */,
+				A784394F1DE7EA150071234B /* ZFViewController.m in Sources */,
+				A76CF6881DEA804A001B4AA5 /* NSOrderedSet+Safe.m in Sources */,
+				A77311091DEEB6DE0079C359 /* Target_Appnext.m in Sources */,
+				A77311141DEEC6260079C359 /* Target_Adcolony.m in Sources */,
+				A76CF6801DEA7F5D001B4AA5 /* ZFRewardVideoManager.m in Sources */,
+				A77311111DEEC42E0079C359 /* AdColonyRewardVideoManager.m in Sources */,
+				A784394C1DE7EA150071234B /* AppDelegate.m in Sources */,
+				A78439491DE7EA150071234B /* main.m in Sources */,
+				A77310EE1DEE84980079C359 /* ZFAppnextRewardVideoManager.m in Sources */,
+				A76CF6851DEA800A001B4AA5 /* NSOrderedSet+FirstObject.m in Sources */,
+				A76CF68B1DEA80FB001B4AA5 /* ZFCommon.m in Sources */,
+				A773110C1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.m in Sources */,
+				A77310E71DEE7A590079C359 /* Target_Vungle.m in Sources */,
+				A77311171DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.m in Sources */,
+				A77310E81DEE7A590079C359 /* ZFVungleRewardVideoManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A78439591DE7EA150071234B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A784395A1DE7EA150071234B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A784395C1DE7EA150071234B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B30F5A347EF705D976E30A14 /* Pods-ZFRewardVideoDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"\"${PODS_ROOT}/Headers/Public/VungleSDK-iOS\"",
+					"$(PROJECT_DIR)/../ZFRewardVideoManager/Platforms/Appnext/AppnextIOSSDK/include",
+				);
+				INFOPLIST_FILE = ZFRewardVideoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Toast\"",
+					"$(PROJECT_DIR)/../ZFRewardVideoManager/Platforms/Appnext/AppnextIOSSDK/",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruozi.ZFRewardVideoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A784395D1DE7EA150071234B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBEB53000CC4FC7F84BF8440 /* Pods-ZFRewardVideoDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"\"${PODS_ROOT}/Headers/Public/VungleSDK-iOS\"",
+					"$(PROJECT_DIR)/../ZFRewardVideoManager/Platforms/Appnext/AppnextIOSSDK/include",
+				);
+				INFOPLIST_FILE = ZFRewardVideoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Toast\"",
+					"$(PROJECT_DIR)/../ZFRewardVideoManager/Platforms/Appnext/AppnextIOSSDK/",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruozi.ZFRewardVideoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A784393F1DE7EA150071234B /* Build configuration list for PBXProject "ZFRewardVideoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A78439591DE7EA150071234B /* Debug */,
+				A784395A1DE7EA150071234B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A784395B1DE7EA150071234B /* Build configuration list for PBXNativeTarget "ZFRewardVideoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A784395C1DE7EA150071234B /* Debug */,
+				A784395D1DE7EA150071234B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A784393C1DE7EA150071234B /* Project object */;
+}

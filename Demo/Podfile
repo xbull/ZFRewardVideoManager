@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+target 'ZFRewardVideoDemo' do
+
+    pod 'VungleSDK-iOS', '~> 3.2.2'
+    pod 'Masonry'
+    pod 'Toast'
+    pod 'AdColony', '~> 2.6.3'
+
+end
