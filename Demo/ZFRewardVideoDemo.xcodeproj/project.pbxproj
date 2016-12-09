@@ -90,8 +90,8 @@
 		A78439581DE7EA150071234B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B30F5A347EF705D976E30A14 /* Pods-ZFRewardVideoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFRewardVideoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZFRewardVideoDemo/Pods-ZFRewardVideoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EBEB53000CC4FC7F84BF8440 /* Pods-ZFRewardVideoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFRewardVideoDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZFRewardVideoDemo/Pods-ZFRewardVideoDemo.release.xcconfig"; sourceTree = "<group>"; };
-		F4CF490E1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPAdcolonyRewardVideoManager.h; path = Adcolony/DPAdcolonyRewardVideoManager.h; sourceTree = "<group>"; };
-		F4CF490F1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPAdcolonyRewardVideoManager.m; path = Adcolony/DPAdcolonyRewardVideoManager.m; sourceTree = "<group>"; };
+		F4CF490E1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAdcolonyRewardVideoManager.h; sourceTree = "<group>"; };
+		F4CF490F1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAdcolonyRewardVideoManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				A773110D1DEEC42E0079C359 /* Adcolony */,
-				F4CF490E1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.h */,
-				F4CF490F1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.m */,
 				A77310EA1DEE84980079C359 /* Appnext */,
 				A77310E11DEE7A590079C359 /* Vungle */,
 			);
@@ -281,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				A773110E1DEEC42E0079C359 /* Action */,
+				F4CF490E1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.h */,
+				F4CF490F1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.m */,
 			);
 			path = Adcolony;
 			sourceTree = "<group>";
