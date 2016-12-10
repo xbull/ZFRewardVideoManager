@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 
   s.name         = 'ZFRewardVideoManager'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = 'ZFRewardVideoManager integrates and dispatches mainstream leading reward video platform videos.'
   s.homepage     = 'https://github.com/ruozi/ZFRewardVideoManager'
   s.license      = 'MIT'
   s.author             = { 'ruozi' => 'wizardfan88@gmail.com' }
   s.ios.deployment_target = '8.0'
-  s.source       = { :git => 'https://github.com/ruozi/ZFRewardVideoManager.git', :tag => s.version}
+  s.source       = { :git => 'git@github.com:948080952/ZFRewardVideoManager.git', :tag => s.version}
 
   s.default_subspec = 'Core'
 
