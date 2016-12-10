@@ -11,6 +11,7 @@
 #import "ZFRewardVideoMediator+Vungle.h"
 #import "ZFRewardVideoMediator+Appnext.h"
 #import "ZFRewardVideoMediator+Adcolony.h"
+#import "ZFRewardVideoMediator+Unity.h"
 
 #ifdef DEBUG
 #define currentAdcID                @"appb48fbc995f0d45d89e"
@@ -28,6 +29,8 @@ static ZFRewardVideoManager *instance;
 @property (nonatomic, strong)   NSString *appNextPlacementId;
 @property (nonatomic, strong)   NSString *adcolonyAppId;
 @property (nonatomic, strong)   NSString *adcolonyZoneId;
+@property (nonatomic, copy)   NSString *unityGameId;
+@property (nonatomic, copy)     NSString *unityPlacementId;
 
 @property (atomic, strong)      NSMutableOrderedSet *rewardVideoPool;
 @property (nonatomic, strong)   NSMutableArray<NSNumber *> *videoCapArray;
@@ -72,6 +75,11 @@ static ZFRewardVideoManager *instance;
 - (void)configAdcolonyAppId:(NSString *)appId zoneId:(NSString *)zoneId {
     self.adcolonyAppId = appId;
     self.adcolonyZoneId = zoneId;
+}
+
+- (void)configUnityGameId:(NSString *)gameId placementId:(NSString *)placementId {
+    self.unityGameId = gameId;
+    self.unityPlacementId = placementId;
 }
 
 - (void)setPriority:(NSArray<NSNumber *> *)priorityArray {
@@ -129,6 +137,11 @@ static ZFRewardVideoManager *instance;
     if (self.appNextPlacementId && [[self.priorityIndicator objectAtIndex:ZFRewardVideoTypeAppNext] unsignedIntegerValue] < ZFRewardVideoTypeCount) {
         [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_setAppnextDelegate:instance];
         [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_startAppnextWithPlacementId:self.appNextPlacementId];
+    }
+    
+    if (self.unityGameId && self.unityPlacementId && [self.priorityIndicator objectAtIndex:ZFRewardVideoTypeUnity].unsignedIntegerValue < ZFRewardVideoTypeCount) {
+        [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_setUnityDelegate:instance];
+        [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_startUnityWithGameId:self.unityGameId placementId:self.unityPlacementId];
     }
     
     isStart = YES;
@@ -259,6 +272,11 @@ static ZFRewardVideoManager *instance;
         case ZFRewardVideoTypeAppNext: {
             self.isPlaying = YES;
             [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_playAppnext];
+        }
+            break;
+        case ZFRewardVideoTypeUnity: {
+            self.isPlaying = YES;
+            [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_playUnity];
         }
             break;
             
