@@ -43,4 +43,12 @@ Pod::Spec.new do |s|
 
   end   
 
+  s.subspec 'Unity' do |ss|
+    
+    ss.dependency 'ZFRewardVideoManager/Core'
+    ss.source_files = 'ZFRewardVideoManager/Platforms/Unity/*.{h,m}', 'ZFRewardVideoManager/Platforms/Unity/Action/*.{h,m}', 'ZFRewardVideoManager/Utils/ZFCommon.{h,m}'
+    ss.vendored_frameworks = 'ZFRewardVideoManager/Platforms/Unity/UnitySDK/UnityAds.framework'
+
+  end
+
 end
