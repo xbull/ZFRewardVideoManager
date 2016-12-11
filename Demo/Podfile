@@ -6,6 +6,6 @@ target 'ZFRewardVideoDemo' do
     pod 'VungleSDK-iOS', '~> 3.2.2'
     pod 'Masonry'
     pod 'Toast'
-    pod 'AdColony', '~> 3.0.5'
+    pod 'AdColony', '~> 3.0.6'
 
 end
