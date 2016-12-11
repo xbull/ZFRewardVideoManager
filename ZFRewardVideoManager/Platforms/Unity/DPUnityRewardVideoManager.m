@@ -43,7 +43,8 @@
 #pragma mark - UnityAdsDelegate
 
 - (void)unityAdsReady:(NSString *)placementId {
-    NSLog(@"[UnityAds]:video ready:%@", placementId);
+    [self unityRewardVideoManagerLog:[NSString stringWithFormat:@"video ready at place:%@", placementId]];
+    
     if ([placementId isEqualToString:self.placementId]) {
         if (self.delegate && [self.delegate respondsToSelector:@selector(videoLoaded:)]) {
             [self.delegate videoLoaded:ZFRewardVideoTypeUnity];
@@ -52,11 +53,12 @@
 }
 
 - (void)unityAdsDidError:(UnityAdsError)error withMessage:(NSString *)message {
-    NSLog(@"[UnityAds]:load video error:%@", message);
+    [self unityRewardVideoManagerLog:[NSString stringWithFormat:@"video load error:%@", message]];
 }
 
 
 - (void)unityAdsDidStart:(NSString *)placementId {
+    [self unityRewardVideoManagerLog:[NSString stringWithFormat:@"video will show at place:%@", placementId]];
     if (self.delegate) {
         if ([self.delegate respondsToSelector:@selector(videoWillStart:)]) {
             [self.delegate videoWillStart:ZFRewardVideoTypeUnity];
@@ -69,10 +71,16 @@
 
 - (void)unityAdsDidFinish:(NSString *)placementId
           withFinishState:(UnityAdsFinishState)state {
+    [self unityRewardVideoManagerLog:[NSString stringWithFormat:@"video will closed at place:%@", placementId]];
     if (self.delegate && [self.delegate respondsToSelector:@selector(videoClosed:)]) {
         [self.delegate videoClosed:ZFRewardVideoTypeUnity];
     }
 }
 
+#pragma mark - Logger
+
+- (void)unityRewardVideoManagerLog:(NSString *)message {
+    NSLog(@"【DPUnityRewardVideoManager】%@", message);
+}
 
 @end
