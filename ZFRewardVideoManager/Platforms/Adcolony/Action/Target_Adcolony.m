@@ -7,20 +7,20 @@
 //
 
 #import "Target_Adcolony.h"
-#import "AdColonyRewardVideoManager.h"
+#import "DPAdcolonyRewardVideoManager.h"
 
 @implementation Target_Adcolony
 
 - (void)Action_setDelegate:(NSDictionary *)params {
-    [AdColonyRewardVideoManager sharedInstance].delegate = [params objectForKey:@"delegate"];
+    [DPAdcolonyRewardVideoManager sharedInstance].delegate = [params objectForKey:@"delegate"];
 }
 
 - (void)Action_startWithInfo:(NSDictionary *)params {
-    [[AdColonyRewardVideoManager sharedInstance] startWithId:[params objectForKey:@"appId"] zoneId:[params objectForKey:@"zoneId"]];
+    [[DPAdcolonyRewardVideoManager sharedInstance] startWithId:[params objectForKey:@"appId"] zoneId:[params objectForKey:@"zoneId"]];
 }
 
 - (void)Action_playWithOptions:(NSDictionary *)params {
-    [[AdColonyRewardVideoManager sharedInstance] play];
+    [[DPAdcolonyRewardVideoManager sharedInstance] play];
 }
 
 @end
