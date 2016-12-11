@@ -6,6 +6,7 @@ ZFRewardVideoManager is an integration of all mainstream reward video platforms.
 - Vungle
 - Appnext
 - Adcolony
+- Unity
 
 ## Features
 
@@ -20,6 +21,7 @@ ZFRewardVideoManager is an integration of all mainstream reward video platforms.
 pod 'ZFRewardVideoManager/Vungle', :git => 'git@github.com:ruozi/ZFRewardVideoManager.git'
 pod 'ZFRewardVideoManager/Appnext', :git => 'git@github.com:ruozi/ZFRewardVideoManager.git'
 pod 'ZFRewardVideoManager/Adcolony', :git => 'git@github.com:ruozi/ZFRewardVideoManager.git'
+pod 'ZFRewardVideoManager/Unity', :git => 'git@github.com:ruozi/ZFRewardVideoManager.git'
 ```
 You can delete certain line if you don't need to play the videos from that platform.
 
@@ -34,9 +36,11 @@ Initialize and start to load videos. Usually use when user enters the homepage o
 [[ZFRewardVideoManager sharedInstance] configVungleAppId:{vungle_appId}];
 [[ZFRewardVideoManager sharedInstance] configAppnextPlacementId:{appnext_placementId}];
 [[ZFRewardVideoManager sharedInstance] configAdcolonyAppId:{adcolony_appId} zoneId:{adcolony_zoneId}];
+[[ZFRewardVideoManager sharedInstance] configUnityGameId:{unity_gameId} placementId:{unity_placementId}];
 [[ZFRewardVideoManager sharedInstance] setPriority:@[@(ZFRewardVideoTypeAdcolony),
                                                      @(ZFRewardVideoTypeAppNext),
-                                                     @(ZFRewardVideoTypeVungle)]];
+                                                     @(ZFRewardVideoTypeVungle),
+                                                     @(ZFRewardVideoTypeUnity)]];
 [[ZFRewardVideoManager sharedInstance] setCap:2 platform:ZFRewardVideoTypeAppNext];
 [[ZFRewardVideoManager sharedInstance] setCap:1 platform:ZFRewardVideoTypeAdcolony];
 [[ZFRewardVideoManager sharedInstance] start];
