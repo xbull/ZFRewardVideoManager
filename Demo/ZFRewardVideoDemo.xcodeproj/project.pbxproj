@@ -22,7 +22,6 @@
 		A77311061DEE86AD0079C359 /* libAppnextSDKCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A77311041DEE86AD0079C359 /* libAppnextSDKCore.a */; };
 		A77311091DEEB6DE0079C359 /* Target_Appnext.m in Sources */ = {isa = PBXBuildFile; fileRef = A77311081DEEB6DE0079C359 /* Target_Appnext.m */; };
 		A773110C1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.m in Sources */ = {isa = PBXBuildFile; fileRef = A773110B1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.m */; };
-		A77311111DEEC42E0079C359 /* AdColonyRewardVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A77311101DEEC42E0079C359 /* AdColonyRewardVideoManager.m */; };
 		A77311141DEEC6260079C359 /* Target_Adcolony.m in Sources */ = {isa = PBXBuildFile; fileRef = A77311131DEEC6260079C359 /* Target_Adcolony.m */; };
 		A77311171DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.m in Sources */ = {isa = PBXBuildFile; fileRef = A77311161DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.m */; };
 		A78439491DE7EA150071234B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A78439481DE7EA150071234B /* main.m */; };
@@ -33,6 +32,7 @@
 		F4631CB71DFBF3B100637ED4 /* DPUnityRewardVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4631CB31DFBF3B100637ED4 /* DPUnityRewardVideoManager.m */; };
 		F4631CB81DFBF3B100637ED4 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4631CB51DFBF3B100637ED4 /* UnityAds.framework */; };
 		F4631CBB1DFBF3C900637ED4 /* ZFRewardVideoMediator+Unity.m in Sources */ = {isa = PBXBuildFile; fileRef = F4631CBA1DFBF3C900637ED4 /* ZFRewardVideoMediator+Unity.m */; };
+		F4CF49101DF98FE400505AC6 /* DPAdcolonyRewardVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CF490F1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,8 +80,6 @@
 		A77311081DEEB6DE0079C359 /* Target_Appnext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Appnext.m; sourceTree = "<group>"; };
 		A773110A1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZFRewardVideoMediator+Appnext.h"; sourceTree = "<group>"; };
 		A773110B1DEEB97F0079C359 /* ZFRewardVideoMediator+Appnext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZFRewardVideoMediator+Appnext.m"; sourceTree = "<group>"; };
-		A773110F1DEEC42E0079C359 /* AdColonyRewardVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdColonyRewardVideoManager.h; sourceTree = "<group>"; };
-		A77311101DEEC42E0079C359 /* AdColonyRewardVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdColonyRewardVideoManager.m; sourceTree = "<group>"; };
 		A77311121DEEC6260079C359 /* Target_Adcolony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Adcolony.h; sourceTree = "<group>"; };
 		A77311131DEEC6260079C359 /* Target_Adcolony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Adcolony.m; sourceTree = "<group>"; };
 		A77311151DEEC7D20079C359 /* ZFRewardVideoMediator+Adcolony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZFRewardVideoMediator+Adcolony.h"; sourceTree = "<group>"; };
@@ -103,6 +101,8 @@
 		F4631CB51DFBF3B100637ED4 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
 		F4631CB91DFBF3C900637ED4 /* ZFRewardVideoMediator+Unity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZFRewardVideoMediator+Unity.h"; sourceTree = "<group>"; };
 		F4631CBA1DFBF3C900637ED4 /* ZFRewardVideoMediator+Unity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZFRewardVideoMediator+Unity.m"; sourceTree = "<group>"; };
+		F4CF490E1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAdcolonyRewardVideoManager.h; sourceTree = "<group>"; };
+		F4CF490F1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAdcolonyRewardVideoManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,8 +294,8 @@
 			isa = PBXGroup;
 			children = (
 				A773110E1DEEC42E0079C359 /* Action */,
-				A773110F1DEEC42E0079C359 /* AdColonyRewardVideoManager.h */,
-				A77311101DEEC42E0079C359 /* AdColonyRewardVideoManager.m */,
+				F4CF490E1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.h */,
+				F4CF490F1DF98FE300505AC6 /* DPAdcolonyRewardVideoManager.m */,
 			);
 			path = Adcolony;
 			sourceTree = "<group>";
@@ -506,11 +506,11 @@
 				A77311091DEEB6DE0079C359 /* Target_Appnext.m in Sources */,
 				A77311141DEEC6260079C359 /* Target_Adcolony.m in Sources */,
 				A76CF6801DEA7F5D001B4AA5 /* ZFRewardVideoManager.m in Sources */,
-				A77311111DEEC42E0079C359 /* AdColonyRewardVideoManager.m in Sources */,
 				F4631CB61DFBF3B100637ED4 /* Target_Unity.m in Sources */,
 				A784394C1DE7EA150071234B /* AppDelegate.m in Sources */,
 				A78439491DE7EA150071234B /* main.m in Sources */,
 				A77310EE1DEE84980079C359 /* ZFAppnextRewardVideoManager.m in Sources */,
+				F4CF49101DF98FE400505AC6 /* DPAdcolonyRewardVideoManager.m in Sources */,
 				A76CF6851DEA800A001B4AA5 /* NSOrderedSet+FirstObject.m in Sources */,
 				F4631CB71DFBF3B100637ED4 /* DPUnityRewardVideoManager.m in Sources */,
 				A76CF68B1DEA80FB001B4AA5 /* ZFCommon.m in Sources */,

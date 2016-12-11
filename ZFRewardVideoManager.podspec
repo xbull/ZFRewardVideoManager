@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   s.subspec 'Adcolony' do |ss|
 
     ss.dependency 'ZFRewardVideoManager/Core'
-    ss.source_files = 'ZFRewardVideoManager/Platforms/Adcolony/*.{h,m}', 'ZFRewardVideoManager/Platforms/Adcolony/Action/*.{h,m}'
-    ss.dependency 'AdColony', '~> 2.6.3'
+    ss.source_files = 'ZFRewardVideoManager/Platforms/Adcolony/*.{h,m}', 'ZFRewardVideoManager/Platforms/Adcolony/Action/*.{h,m}', 'ZFRewardVideoManager/Utils/ZFCommon.{h,m}'
+    ss.dependency 'AdColony', '~> 3.0.6'
 
   end   
 
