@@ -8,6 +8,8 @@
 
 @interface ZFRewardVideoParameters : NSObject
 
++ (NSInteger)defaultSingleCap;
+
 + (NSString *)platformNameForIndex:(NSInteger)index;
 
 @end

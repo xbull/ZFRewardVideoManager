@@ -96,7 +96,7 @@ static ZFRewardVideoManager *instance;
     NSLog(@"【ZFRewardVideoManager】order indicator:%@", self.priorityIndicator);
 }
 
-- (void)setCap:(NSUInteger)cap platform:(ZFRewardVideoType)platform {
+- (void)setCap:(NSInteger)cap platform:(ZFRewardVideoType)platform {
     
     [self.capIndicator setObject:@(cap) forKey:[ZFRewardVideoParameters platformNameForIndex:platform]];
 }
@@ -186,7 +186,15 @@ static ZFRewardVideoManager *instance;
     
     NSLog(@"【ZFRewardVideoManager】videoLoaded:%ld", (long)type);
     NSInteger cap = [[self.capIndicator valueForKey:[ZFRewardVideoParameters platformNameForIndex:type]] integerValue];
-    if (self.videoCapArray[type].integerValue < (cap < 0 ? 0 : cap)) {
+    NSInteger realCap;
+    if (cap < 0) {
+        realCap = 0;
+    } else if (0 == cap) {
+        realCap = [ZFRewardVideoParameters defaultSingleCap];
+    } else {
+        realCap = cap;
+    }
+    if (self.videoCapArray[type].integerValue < realCap) {
         NSLog(@"【ZFRewardVideoManager】video<%ld> add to the pool!", (long)type);
         [instance.rewardVideoPool addObject:@(type)];
         NSLog(@"【ZFRewardVideoManager】now the video pool status:%@!", instance.rewardVideoPool);

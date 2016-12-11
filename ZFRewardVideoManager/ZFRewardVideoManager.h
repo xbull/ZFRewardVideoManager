@@ -110,7 +110,7 @@ typedef enum {
  @param cap : Upper limit for video play during one app lifecycle.
  @param platform : Platform the cap should be setted for.
  */
-- (void)setCap:(NSUInteger)cap platform:(ZFRewardVideoType)platform;
+- (void)setCap:(NSInteger)cap platform:(ZFRewardVideoType)platform;
 
 // ===========================>   Platform Dispatch Config    <==============================[End]
 
