@@ -53,7 +53,7 @@
 
 - (void)requestInterstitial {
     //Request an interstitial ad from AdColony
-    NSLog(@"adcolony request with appID:%@ zoneID:%@", self.adId, self.zoneId);
+    [self adcolonyRewardVideoManagerLog:[NSString stringWithFormat:@"video loading at zone:%@", self.zoneId]];
     [AdColony requestInterstitialInZone:self.zoneId options:nil
      
                                 success:^(AdColonyInterstitial* ad) {
@@ -62,6 +62,7 @@
                                     ad.close = ^{
                                         _ad = nil;
                                         
+                                        [self adcolonyRewardVideoManagerLog:[NSString stringWithFormat:@"video close at zone:%@", self.zoneId]];
                                         if (self.delegate) {
                                             if ([self.delegate respondsToSelector:@selector(videoClosed:)]) {
                                                 [self.delegate videoClosed:ZFRewardVideoTypeAdcolony];
@@ -76,7 +77,7 @@
                                     
                                     ad.expire = ^{
                                         _ad = nil;
-                                        
+                                        [self adcolonyRewardVideoManagerLog:[NSString stringWithFormat:@"video expire at zone:%@", self.zoneId]];
                                         if (self.delegate && [self.delegate respondsToSelector:@selector(videoLoading:)]) {
                                             [self.delegate videoLoading:ZFRewardVideoTypeAdcolony];
                                         }
@@ -85,15 +86,22 @@
                                     
                                     _ad = ad;
                                     
+                                    [self adcolonyRewardVideoManagerLog:[NSString stringWithFormat:@"video ready at zone:%@", self.zoneId]];
                                     if (self.delegate && [self.delegate respondsToSelector:@selector(videoLoaded:)]) {
                                         [self.delegate videoLoaded:ZFRewardVideoTypeAdcolony];
                                     }
                                 }
      
                                 failure:^(AdColonyAdRequestError* error) {
-                                    NSLog(@"SAMPLE_APP: Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]);
+                                    [self adcolonyRewardVideoManagerLog:[NSString stringWithFormat:@"Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]]];
                                 }
      ];
+}
+
+#pragma mark - Logger
+
+- (void)adcolonyRewardVideoManagerLog:(NSString *)message {
+    NSLog(@"【DPAdColonyRewardVideoManager】%@", message);
 }
 
 @end
