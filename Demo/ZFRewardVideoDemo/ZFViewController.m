@@ -53,10 +53,10 @@
     [[ZFRewardVideoManager sharedInstance] configAppnextPlacementId:@"c655c6af-d835-43df-bce9-a1634bf95abc"];
     [[ZFRewardVideoManager sharedInstance] configUnityGameId:@"1227091" placementId:@"video"];
     [[ZFRewardVideoManager sharedInstance] configAdcolonyAppId:@"app86b86d6bc5bc4ef2b5" zoneId:@"vz22069ee8f2e3429489"];
-    [[ZFRewardVideoManager sharedInstance] setPriority:@[@(ZFRewardVideoTypeAdcolony),
-                                                         @(ZFRewardVideoTypeAppNext),
-                                                         @(ZFRewardVideoTypeVungle),
-                                                         @(ZFRewardVideoTypeUnity)]];
+    [[ZFRewardVideoManager sharedInstance] setPriority:@[@(ZFRewardVideoTypeVungle),
+                                                         @(ZFRewardVideoTypeUnity),
+                                                         @(ZFRewardVideoTypeAdcolony),
+                                                         @(ZFRewardVideoTypeAppNext)]];
     [[ZFRewardVideoManager sharedInstance] setCap:2 platform:ZFRewardVideoTypeAppNext];
     [[ZFRewardVideoManager sharedInstance] setCap:1 platform:ZFRewardVideoTypeAdcolony];
     [[ZFRewardVideoManager sharedInstance] start];

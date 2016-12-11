@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
     ss.dependency 'ZFRewardVideoManager/Core'
     ss.source_files = 'ZFRewardVideoManager/Utils/ZFCommon.{h,m}', 'ZFRewardVideoManager/Platforms/Vungle/*.{h,m}', 'ZFRewardVideoManager/Platforms/Vungle/Action/*.{h,m}'
-    ss.dependency 'VungleSDK-iOS', '~> 3.2.2'
+    ss.dependency 'VungleSDK-iOS', '~> 4.0.9'
 
   end   
 
