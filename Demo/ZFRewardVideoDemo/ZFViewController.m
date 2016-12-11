@@ -51,8 +51,8 @@
     [ZFRewardVideoManager sharedInstance].delegate = self;
     [[ZFRewardVideoManager sharedInstance] configVungleAppId:@"57a9883caeabb1ce4b000058"];
     [[ZFRewardVideoManager sharedInstance] configAppnextPlacementId:@"c655c6af-d835-43df-bce9-a1634bf95abc"];
-    [[ZFRewardVideoManager sharedInstance] configAdcolonyAppId:@"app048bdbe2b4044f099a" zoneId:@"vz19e3c3827d4a4a6f9e"];
     [[ZFRewardVideoManager sharedInstance] configUnityGameId:@"1227091" placementId:@"video"];
+    [[ZFRewardVideoManager sharedInstance] configAdcolonyAppId:@"app86b86d6bc5bc4ef2b5" zoneId:@"vz22069ee8f2e3429489"];
     [[ZFRewardVideoManager sharedInstance] setPriority:@[@(ZFRewardVideoTypeAdcolony),
                                                          @(ZFRewardVideoTypeAppNext),
                                                          @(ZFRewardVideoTypeVungle),
