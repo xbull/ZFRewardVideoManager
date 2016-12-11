@@ -7,10 +7,6 @@
 
 @implementation ZFRewardVideoParameters
 
-+ (NSUInteger)defaultSingleCap {
-    return 10;
-}
-
 + (NSString *)platformNameForIndex:(NSInteger)index {
     switch (index) {
         case 0:
@@ -43,6 +39,10 @@
             
         case 7:
             return @"Appnext";
+            break;
+            
+        case 8:
+            return @"unity";
             break;
             
         default:

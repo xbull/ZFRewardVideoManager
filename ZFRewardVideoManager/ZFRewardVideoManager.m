@@ -185,8 +185,8 @@ static ZFRewardVideoManager *instance;
     NSUInteger beforeCount = instance.rewardVideoPool.count;
     
     NSLog(@"【ZFRewardVideoManager】videoLoaded:%ld", (long)type);
-    NSUInteger cap = [[self.capIndicator valueForKey:[ZFRewardVideoParameters platformNameForIndex:type]] unsignedIntegerValue];
-    if (self.videoCapArray[type].integerValue < (cap > 0 ? cap : [ZFRewardVideoParameters defaultSingleCap])) {
+    NSInteger cap = [[self.capIndicator valueForKey:[ZFRewardVideoParameters platformNameForIndex:type]] integerValue];
+    if (self.videoCapArray[type].integerValue < (cap < 0 ? 0 : cap)) {
         NSLog(@"【ZFRewardVideoManager】video<%ld> add to the pool!", (long)type);
         [instance.rewardVideoPool addObject:@(type)];
         NSLog(@"【ZFRewardVideoManager】now the video pool status:%@!", instance.rewardVideoPool);
