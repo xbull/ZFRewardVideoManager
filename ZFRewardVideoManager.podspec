@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'ZFRewardVideoManager'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.summary      = 'ZFRewardVideoManager integrates and dispatches mainstream leading reward video platform videos.'
   s.homepage     = 'https://github.com/ruozi/ZFRewardVideoManager'
   s.license      = 'MIT'
@@ -42,5 +42,13 @@ Pod::Spec.new do |s|
     ss.dependency 'AdColony', '~> 2.6.3'
 
   end   
+
+  s.subspec 'Unity' do |ss|
+    
+    ss.dependency 'ZFRewardVideoManager/Core'
+    ss.source_files = 'ZFRewardVideoManager/Platforms/Unity/*.{h,m}', 'ZFRewardVideoManager/Platforms/Unity/Action/*.{h,m}', 'ZFRewardVideoManager/Utils/ZFCommon.{h,m}'
+    ss.vendored_frameworks = 'ZFRewardVideoManager/Platforms/Unity/UnitySDK/UnityAds.framework'
+
+  end
 
 end

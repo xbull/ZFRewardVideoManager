@@ -78,6 +78,16 @@ typedef enum {
  * You can get the two params above from : http://www.adcolony.com
  */
 - (void)configAdcolonyAppId:(NSString *)appId zoneId:(NSString *)zoneId;
+
+/**
+ Set Unity gameId and placementId to load Unity videos.
+ 
+ @param gameId : Your Unity gameId.
+ @param placementId : Your Unity placementId.
+ * You can get the two params above from : https://unity3d.com/cn/services/ads
+ */
+- (void)configUnityGameId:(NSString *)gameId placementId:(NSString *)placementId;
+
 // =============================>   Platform Info Config    <================================[End]
 
 // ===========================>   Platform Dispatch Config    <============================[Begin]

@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger, ZFRewardVideoType) {
     ZFRewardVideoTypeFyber,
     ZFRewardVideoTypeMobVista,
     ZFRewardVideoTypeAppNext,
+    ZFRewardVideoTypeUnity,
     ZFRewardVideoTypeCount
 };
 
