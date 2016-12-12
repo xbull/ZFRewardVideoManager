@@ -45,8 +45,8 @@ Initialize and start to load videos. Usually use when user enters the homepage o
 [[ZFRewardVideoManager sharedInstance] setCap:1 platform:ZFRewardVideoTypeAdcolony];
 [[ZFRewardVideoManager sharedInstance] start];
 ```
-**Notice1** : You must set priority for a platform if you want to play videos from it.
-**Notice2** : Default cap will be set 5 if you don't set cap for a platform. Set -1 for cap will block loading video from corresponding platform.
+- **Notice1** : You must set priority for a platform if you want to play videos from it.
+- **Notice2** : Default cap will be set 5 if you don't set cap for a platform. Set -1 for cap will block loading video from corresponding platform.
 
 ### Play Video
 
