@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
   s.subspec 'Vungle' do |ss|
 
     ss.dependency 'ZFRewardVideoManager/Core'
-    ss.source_files = 'ZFRewardVideoManager/Utils/ZFCommon.{h,m}', 'ZFRewardVideoManager/Platforms/Vungle/*.{h,m}', 'ZFRewardVideoManager/Platforms/Vungle/Action/*.{h,m}'
     ss.dependency 'VungleSDK-iOS', '~> 4.0.9'
+    ss.source_files = 'ZFRewardVideoManager/Utils/ZFCommon.{h,m}', 'ZFRewardVideoManager/Platforms/Vungle/*.{h,m}', 'ZFRewardVideoManager/Platforms/Vungle/Action/*.{h,m}'
 
   end   
 
@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   s.subspec 'Adcolony' do |ss|
 
     ss.dependency 'ZFRewardVideoManager/Core'
-    ss.source_files = 'ZFRewardVideoManager/Platforms/Adcolony/*.{h,m}', 'ZFRewardVideoManager/Platforms/Adcolony/Action/*.{h,m}', 'ZFRewardVideoManager/Utils/ZFCommon.{h,m}'
     ss.dependency 'AdColony', '~> 3.0.6'
+    ss.source_files = 'ZFRewardVideoManager/Platforms/Adcolony/*.{h,m}', 'ZFRewardVideoManager/Platforms/Adcolony/Action/*.{h,m}', 'ZFRewardVideoManager/Utils/ZFCommon.{h,m}'
 
   end   
 
