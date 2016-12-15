@@ -298,7 +298,7 @@ static ZFRewardVideoManager *instance;
     if (!_priorityIndicator) {
         _priorityIndicator = [NSMutableArray<NSNumber *> arrayWithCapacity:ZFRewardVideoTypeCount];
         for (NSInteger i = 0; i < ZFRewardVideoTypeCount; i++) {
-            [_priorityIndicator addObject:@(INFINITY)];
+            [_priorityIndicator addObject:@(ZFRewardVideoTypeCount)];
         }
     }
     return _priorityIndicator;
