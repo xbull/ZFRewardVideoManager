@@ -18,10 +18,10 @@ ZFRewardVideoManager is an integration of all mainstream reward video platforms.
 ## Installation
 
 ```
-pod 'ZFRewardVideoManager/Vungle', :git => 'git@github.com:ruozi/ZFRewardVideoManager.git'
-pod 'ZFRewardVideoManager/Appnext', :git => 'git@github.com:ruozi/ZFRewardVideoManager.git'
-pod 'ZFRewardVideoManager/Adcolony', :git => 'git@github.com:ruozi/ZFRewardVideoManager.git'
-pod 'ZFRewardVideoManager/Unity', :git => 'git@github.com:ruozi/ZFRewardVideoManager.git'
+pod 'ZFRewardVideoManager/Vungle'
+pod 'ZFRewardVideoManager/Appnext'
+pod 'ZFRewardVideoManager/Adcolony'
+pod 'ZFRewardVideoManager/Unity'
 ```
 You can delete certain line if you don't need to play the videos from that platform.
 
