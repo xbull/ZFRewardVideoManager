@@ -40,6 +40,8 @@ static ZFRewardVideoManager *instance;
 @property (nonatomic, strong)   NSMutableArray<NSNumber *> *priorityIndicator;
 @property (nonatomic, strong)   NSMutableDictionary *capIndicator;
 
+@property (nonatomic, readwrite, assign) ZFRewardVideoStatus rewardVideoStatus;
+
 @end
 
 @implementation ZFRewardVideoManager
@@ -203,6 +205,7 @@ static ZFRewardVideoManager *instance;
             NSLog(@"【ZFRewardVideoManager】Video did update status to [Loaded]!");
             [self.delegate videoDidUpdateStatus:ZFRewardVideoStatusReady];
         }
+        self.rewardVideoStatus = ZFRewardVideoStatusReady;
     } else {
         NSLog(@"【ZFRewardVideoManager】cap for platform [%ld] reaches the upper limit.", (long)type);
     }
@@ -219,6 +222,7 @@ static ZFRewardVideoManager *instance;
         NSLog(@"【ZFRewardVideoManager】Video did update status to [Loading]!");
         [self.delegate videoDidUpdateStatus:ZFRewardVideoStatusLoading];
     }
+    self.rewardVideoStatus = ZFRewardVideoStatusLoading;
 }
 
 - (void)videoWillStart:(ZFRewardVideoType)type {

@@ -138,4 +138,6 @@ typedef enum {
 
 @property (nonatomic, weak) id<ZFRewardVideoManagerDelegate> delegate;
 
+@property (nonatomic, readonly, assign) ZFRewardVideoStatus rewardVideoStatus;
+
 @end
