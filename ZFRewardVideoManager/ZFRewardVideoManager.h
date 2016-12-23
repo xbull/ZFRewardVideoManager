@@ -124,20 +124,20 @@ typedef enum {
 - (void)start;
 
 /**
-
- @return return the status of videos. Often called when load UI.
- */
-- (ZFRewardVideoStatus)getStatus;
-
-/**
  
  * Videos will be played according to the priority and cap after this called.
  
  */
 - (void)play;
 
+/**
+ 
+ * @property status indicates whether the video is available or not.
+ 
+ */
+@property (nonatomic, readonly, assign) ZFRewardVideoStatus status;
+
 @property (nonatomic, weak) id<ZFRewardVideoManagerDelegate> delegate;
 
-@property (nonatomic, readonly, assign) ZFRewardVideoStatus rewardVideoStatus;
 
 @end

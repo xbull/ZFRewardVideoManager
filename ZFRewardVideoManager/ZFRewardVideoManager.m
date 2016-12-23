@@ -29,7 +29,7 @@ static ZFRewardVideoManager *instance;
 @property (nonatomic, strong)   NSString *appNextPlacementId;
 @property (nonatomic, strong)   NSString *adcolonyAppId;
 @property (nonatomic, strong)   NSString *adcolonyZoneId;
-@property (nonatomic, copy)   NSString *unityGameId;
+@property (nonatomic, copy)     NSString *unityGameId;
 @property (nonatomic, copy)     NSString *unityPlacementId;
 
 @property (atomic, strong)      NSMutableOrderedSet *rewardVideoPool;
@@ -40,11 +40,16 @@ static ZFRewardVideoManager *instance;
 @property (nonatomic, strong)   NSMutableArray<NSNumber *> *priorityIndicator;
 @property (nonatomic, strong)   NSMutableDictionary *capIndicator;
 
-@property (nonatomic, readwrite, assign) ZFRewardVideoStatus rewardVideoStatus;
-
 @end
 
 @implementation ZFRewardVideoManager
+
+@synthesize status = _status;
+
+#pragma mark - Forbid KVC
++ (BOOL)accessInstanceVariablesDirectly {
+    return NO;
+}
 
 #pragma mark - Singleton
 + (instancetype)sharedInstance {
@@ -56,6 +61,7 @@ static ZFRewardVideoManager *instance;
             instance.rewardVideoPool = [NSMutableOrderedSet orderedSetWithCapacity:ZFRewardVideoTypeCount];
             instance.readyVideoIndex = NSNotFound;
             instance.videoCapArray = [NSMutableArray arrayWithCapacity:ZFRewardVideoTypeCount];
+            instance.status = ZFRewardVideoStatusLoading;
             for (int i = 0; i < ZFRewardVideoTypeCount; i++) {
                 [instance.videoCapArray addObject:@(0)];
             }
@@ -115,27 +121,12 @@ static ZFRewardVideoManager *instance;
         [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_setAdcolonyDelegate:instance];
         [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_startAdcolonyWithAppId:self.adcolonyAppId zoneId:self.adcolonyZoneId];
     }
-//    
-//    [DPApplovinRewardVideoManager sharedInstance].delegate = instance;
-//    [[DPApplovinRewardVideoManager sharedInstance] start];
-//
+    
     if (self.vungleAppId && [[self.priorityIndicator objectAtIndex:ZFRewardVideoTypeVungle] unsignedIntegerValue] < ZFRewardVideoTypeCount) {
         [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_setVungleDelegate:instance];
         [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_startVungleWithAppId:self.vungleAppId];
     }
-//
-//    [ZFSupersonicRewardVideoManager sharedInstance].delegate = instance;
-//    [[ZFSupersonicRewardVideoManager sharedInstance] startWithAppId:[[GiftClient sharedClient] get_OW_ss_appId]];
-//    
-//    NSArray *fyberKey = [[GiftClient sharedClient] get_OW_fybr_appIdAndToken];
-//    if (fyberKey.count == 2) {
-//        [ZFFyberRewardVideoManager sharedInstance].delegate = instance;
-//        [[ZFFyberRewardVideoManager sharedInstance] startWithAppId:fyberKey[0] token:fyberKey[1]];
-//    }
-//    
-//    [ZFMobvistaRewardVideoManager sharedInstance].delegate = instance;
-//    [[ZFMobvistaRewardVideoManager sharedInstance] startWithUnitID:[MVKeyKeeper rvId]];
-//    
+    
     if (self.appNextPlacementId && [[self.priorityIndicator objectAtIndex:ZFRewardVideoTypeAppNext] unsignedIntegerValue] < ZFRewardVideoTypeCount) {
         [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_setAppnextDelegate:instance];
         [[ZFRewardVideoMediator sharedInstance] ZFRewardVideoMediator_startAppnextWithPlacementId:self.appNextPlacementId];
@@ -149,22 +140,13 @@ static ZFRewardVideoManager *instance;
     isStart = YES;
 }
 
-- (ZFRewardVideoStatus)getStatus {
-    
-    if (instance.rewardVideoPool.count > 0) {
-        return ZFRewardVideoStatusReady;
-    }
-    
-    return ZFRewardVideoStatusLoading;
-}
-
 - (void)play {
     
     if (self.isPlaying) {
         return;
     }
     
-    if (ZFRewardVideoStatusReady != [[ZFRewardVideoManager sharedInstance] getStatus]) {
+    if (ZFRewardVideoStatusReady != self.status) {
         return;
     }
     
@@ -181,7 +163,7 @@ static ZFRewardVideoManager *instance;
     }
 }
 
-#pragma mark - RewardVideoDelegate
+#pragma mark - <RewardVideoDelegate>
 - (void)videoLoaded:(ZFRewardVideoType)type {
     
     NSUInteger beforeCount = instance.rewardVideoPool.count;
@@ -203,9 +185,9 @@ static ZFRewardVideoManager *instance;
         
         if (!beforeCount && self.delegate && [self.delegate respondsToSelector:@selector(videoDidUpdateStatus:)]) {
             NSLog(@"【ZFRewardVideoManager】Video did update status to [Loaded]!");
+            self.status = ZFRewardVideoStatusReady;
             [self.delegate videoDidUpdateStatus:ZFRewardVideoStatusReady];
         }
-        self.rewardVideoStatus = ZFRewardVideoStatusReady;
     } else {
         NSLog(@"【ZFRewardVideoManager】cap for platform [%ld] reaches the upper limit.", (long)type);
     }
@@ -220,9 +202,9 @@ static ZFRewardVideoManager *instance;
     
     if (beforeCount && !instance.rewardVideoPool.count && self.delegate && [self.delegate respondsToSelector:@selector(videoDidUpdateStatus:)]) {
         NSLog(@"【ZFRewardVideoManager】Video did update status to [Loading]!");
+        self.status = ZFRewardVideoStatusLoading;
         [self.delegate videoDidUpdateStatus:ZFRewardVideoStatusLoading];
     }
-    self.rewardVideoStatus = ZFRewardVideoStatusLoading;
 }
 
 - (void)videoWillStart:(ZFRewardVideoType)type {
@@ -243,7 +225,7 @@ static ZFRewardVideoManager *instance;
     //
 }
 
-#pragma mark - Private methods
+#pragma mark - private methods
 - (void)playVideo:(ZFRewardVideoType)index {
     
     NSLog(@"【ZFRewardVideoManager】Cap +1 for video %ld", (long)index);
@@ -297,7 +279,7 @@ static ZFRewardVideoManager *instance;
     }
 }
 
-#pragma mark - Getter
+#pragma mark - getters
 - (NSMutableArray<NSNumber *> *)priorityIndicator {
     if (!_priorityIndicator) {
         _priorityIndicator = [NSMutableArray<NSNumber *> arrayWithCapacity:ZFRewardVideoTypeCount];
@@ -313,6 +295,11 @@ static ZFRewardVideoManager *instance;
         _capIndicator = [NSMutableDictionary dictionary];
     }
     return _capIndicator;
+}
+
+#pragma mark - setters
+- (void)setStatus:(ZFRewardVideoStatus)status {
+    _status = status;
 }
 
 @end
