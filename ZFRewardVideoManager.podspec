@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'ZFRewardVideoManager'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.summary      = 'ZFRewardVideoManager integrates and dispatches mainstream leading reward video platform videos.'
   s.homepage     = 'https://github.com/ruozi/ZFRewardVideoManager'
   s.license      = 'MIT'
@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
 
     ss.source_files = 'ZFRewardVideoManager/*.{h,m}', 'ZFRewardVideoManager/Utils/*.{h,m}', 'ZFRewardVideoManager/Mediator/*.{h,m}', 'ZFRewardVideoManager/Categories/*.{h,m}'
     ss.public_header_files = 'ZFRewardVideoManager/*.h'
+    ss.requires_arc = 'ZFRewardVideoManager/*.m'
 
   end
 
