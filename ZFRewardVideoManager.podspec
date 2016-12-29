@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'ZFRewardVideoManager'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.summary      = 'ZFRewardVideoManager integrates and dispatches mainstream leading reward video platform videos.'
   s.homepage     = 'https://github.com/ruozi/ZFRewardVideoManager'
   s.license      = 'MIT'

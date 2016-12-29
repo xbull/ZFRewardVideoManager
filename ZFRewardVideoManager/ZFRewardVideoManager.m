@@ -183,10 +183,13 @@ static ZFRewardVideoManager *instance;
         [instance.rewardVideoPool addObject:@(type)];
         NSLog(@"【ZFRewardVideoManager】now the video pool status:%@!", instance.rewardVideoPool);
         
-        if (!beforeCount && self.delegate && [self.delegate respondsToSelector:@selector(videoDidUpdateStatus:)]) {
+        if (!beforeCount) {
             NSLog(@"【ZFRewardVideoManager】Video did update status to [Loaded]!");
             self.status = ZFRewardVideoStatusReady;
-            [self.delegate videoDidUpdateStatus:ZFRewardVideoStatusReady];
+            
+            if (self.delegate && [self.delegate respondsToSelector:@selector(videoDidUpdateStatus:)]) {
+                [self.delegate videoDidUpdateStatus:ZFRewardVideoStatusReady];
+            }
         }
     } else {
         NSLog(@"【ZFRewardVideoManager】cap for platform [%ld] reaches the upper limit.", (long)type);
@@ -200,10 +203,13 @@ static ZFRewardVideoManager *instance;
     [instance.rewardVideoPool removeObject:@(type)];
     NSLog(@"【ZFRewardVideoManager】videoLoading:%ld", (long)type);
     
-    if (beforeCount && !instance.rewardVideoPool.count && self.delegate && [self.delegate respondsToSelector:@selector(videoDidUpdateStatus:)]) {
+    if (beforeCount && !instance.rewardVideoPool.count) {
         NSLog(@"【ZFRewardVideoManager】Video did update status to [Loading]!");
         self.status = ZFRewardVideoStatusLoading;
-        [self.delegate videoDidUpdateStatus:ZFRewardVideoStatusLoading];
+        
+        if (self.delegate && [self.delegate respondsToSelector:@selector(videoDidUpdateStatus:)]) {
+            [self.delegate videoDidUpdateStatus:ZFRewardVideoStatusLoading];
+        }
     }
 }
 
